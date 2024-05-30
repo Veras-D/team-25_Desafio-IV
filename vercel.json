@@ -1,5 +1,5 @@
 {
-    "rewrites":  [
-        {"source": "/(.*)", "destination": "/"}
-     ]
+    "routes": [
+      { "src": "/gerenciamento_de_equipe", "dest": "/gerenciamento_de_equipe/index.html" }
+    ]
 }
