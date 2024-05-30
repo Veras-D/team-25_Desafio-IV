@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/$1", "basePath": "landing-page" }
+      { "source": "/(.*)", "destination": "/landing-page/$1" }
     ]
   }
   
