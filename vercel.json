@@ -1,5 +1,5 @@
 {
-    "routes": [
-      { "src": "/gerenciamento_de_equipe", "dest": "/" }
-    ]
+    "rewrites":  [
+        {"source": "/(.*)", "destination": "/"}
+     ]
 }
