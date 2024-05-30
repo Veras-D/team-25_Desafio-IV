@@ -120,7 +120,7 @@
             
             if (taskList) {
                 const newTask = document.createElement('li');
-                newTask.innerHTML = `${title} <span>${date}</span> <button onclick="removeTask(this)">Remover</button>`;
+                newTask.innerHTML = `${title} - <span>${date}</span> <button onclick="removeTask(this)">Remover</button>`;
                 taskList.appendChild(newTask);
             } else {
                 alert('Categoria não encontrada!');
@@ -168,7 +168,7 @@
                 const taskList = document.getElementById(categoryId);
                 tasks[category].forEach(task => {
                     const newTask = document.createElement('li');
-                    newTask.innerHTML = `${task.title} <span>${task.date}</span> <button onclick="removeTask(this)">Remover</button>`;
+                    newTask.innerHTML = `${task.title} - <span>${task.date}</span> <button onclick="removeTask(this)">Remover</button>`;
                     taskList.appendChild(newTask);
                 });
             }
