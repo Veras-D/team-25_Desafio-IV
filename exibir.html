@@ -46,47 +46,57 @@
     </style>
 </head>
 <body>
-    <h3 style="text-align: center; width: 100%;">Team 25</h3>
+    <h3 style="text-align: center; width: 100%;">Listas de Tarefas</h3>
 
     <div class="task-lists-container">
         <div class="task-list">
             <h2>Front-End</h2>
-            <ul>
-                <li>Arrumar Rotas na Vercel - 10/06 12:00 AM</li>
-            </ul>
+            <ul id="front-end-tasks"></ul>
         </div>
 
         <div class="task-list">
             <h2>Back-End</h2>
-            <ul>
-                <li>Clonar o repositório do projeto - 01/06 12:00 AM</li>
-                <li>Criar o banco de dados - 04/06 12:00 AM</li>
-                <li>Criar e desenvolver os arquivos usando NodeJS: db.js e server.js - 18/06 12:00 AM <br><br> Nota: Realizar pequenas entregas ao decorrer do tempo</li>
-            </ul>
+            <ul id="back-end-tasks"></ul>
         </div>
 
         <div class="task-list">
             <h2>Design</h2>
-            <ul>
-                <li>Reunião - 30/05 07:00 PM</li>
-            </ul>
+            <ul id="design-tasks"></ul>
         </div>
 
         <div class="task-list">
             <h2>Dados</h2>
-            <ul>
-                <li>Entregar uma lista contendo quais dados precisam para desenvolver os dashboards - 04/06 12:00 AM</li>
-                <li>Descrever como os dados serão usados e em quais gráficos serão usados - 04/06 12:00 AM <br><br> Nota: Deve ser o suficiente para preencher pelo menos uma pagina</li>
-            </ul>
+            <ul id="data-tasks"></ul>
         </div>
 
         <div class="task-list">
             <h2>Jogos</h2>
-            <ul>
-                <li>GDD - 06/06 12:00 AM</li>
-            </ul>
+            <ul id="games-tasks"></ul>
         </div>
     </div>
-    <a href="gerenciar.html">teste</a>
+
+    <script>
+        function loadTasks() {
+            const tasks = JSON.parse(localStorage.getItem('tasks')) || {
+                frontEnd: [],
+                backEnd: [],
+                design: [],
+                dados: [],
+                jogos: []
+            };
+
+            for (const category in tasks) {
+                const categoryId = `${category}-tasks`;
+                const taskList = document.getElementById(categoryId);
+                tasks[category].forEach(task => {
+                    const newTask = document.createElement('li');
+                    newTask.innerHTML = `${task.title} <span>${task.date}</span>`;
+                    taskList.appendChild(newTask);
+                });
+            }
+        }
+
+        window.onload = loadTasks;
+    </script>
 </body>
 </html>

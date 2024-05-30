@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .task-lists-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .task-list {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 250px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .task-list h2 {
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+        .task-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .task-list ul li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+            line-height: 1.5;
+            position: relative;
+        }
+        .task-list ul li:last-child {
+            border-bottom: none;
+        }
+        .task-list ul li button {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        #new-task-form {
+            margin-bottom: 20px;
+        }
+        #new-task-form input, #new-task-form button {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center; width: 100%;">Gerenciador de Tarefas</h3>
+
+    <form id="new-task-form">
+        <input type="text" id="new-task-title" placeholder="Título da Tarefa" required>
+        <input type="text" id="new-task-date" placeholder="Data da Tarefa" required>
+        <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <div class="task-lists-container">
+        <div class="task-list">
+            <h2>Front-End</h2>
+            <ul id="front-end-tasks"></ul>
+        </div>
+
+        <div class="task-list">
+            <h2>Back-End</h2>
+            <ul id="back-end-tasks"></ul>
+        </div>
+
+        <div class="task-list">
+            <h2>Design</h2>
+            <ul id="design-tasks"></ul>
+        </div>
+
+        <div class="task-list">
+            <h2>Dados</h2>
+            <ul id="data-tasks"></ul>
+        </div>
+
+        <div class="task-list">
+            <h2>Jogos</h2>
+            <ul id="games-tasks"></ul>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('new-task-form');
+        const titleInput = document.getElementById('new-task-title');
+        const dateInput = document.getElementById('new-task-date');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const title = titleInput.value;
+            const date = dateInput.value;
+            const taskCategory = prompt("Digite a categoria da tarefa (Front-End, Back-End, Design, Dados, Jogos):").toLowerCase().replace(' ', '-');
+
+            addTask(taskCategory, title, date);
+
+            titleInput.value = '';
+            dateInput.value = '';
+
+            saveTasks();
+        });
+
+        function addTask(category, title, date) {
+            const categoryId = `${category}-tasks`;
+            const taskList = document.getElementById(categoryId);
+            
+            if (taskList) {
+                const newTask = document.createElement('li');
+                newTask.innerHTML = `${title} <span>${date}</span> <button onclick="removeTask(this)">Remover</button>`;
+                taskList.appendChild(newTask);
+            } else {
+                alert('Categoria não encontrada!');
+            }
+        }
+
+        function removeTask(button) {
+            const taskItem = button.parentElement;
+            taskItem.remove();
+            saveTasks();
+        }
+
+        function saveTasks() {
+            const tasks = {
+                frontEnd: [],
+                backEnd: [],
+                design: [],
+                dados: [],
+                jogos: []
+            };
+
+            document.querySelectorAll('.task-list').forEach(list => {
+                const category = list.querySelector('h2').innerText.toLowerCase().replace(' ', '-');
+                list.querySelectorAll('li').forEach(task => {
+                    const title = task.childNodes[0].nodeValue.trim();
+                    const date = task.querySelector('span').innerText;
+                    tasks[category].push({ title, date });
+                });
+            });
+
+            localStorage.setItem('tasks', JSON.stringify(tasks));
+        }
+
+        function loadTasks() {
+            const tasks = JSON.parse(localStorage.getItem('tasks')) || {
+                frontEnd: [],
+                backEnd: [],
+                design: [],
+                dados: [],
+                jogos: []
+            };
+
+            for (const category in tasks) {
+                const categoryId = `${category}-tasks`;
+                const taskList = document.getElementById(categoryId);
+                tasks[category].forEach(task => {
+                    const newTask = document.createElement('li');
+                    newTask.innerHTML = `${task.title} <span>${task.date}</span> <button onclick="removeTask(this)">Remover</button>`;
+                    taskList.appendChild(newTask);
+                });
+            }
+        }
+
+        window.onload = loadTasks;
+    </script>
+    <a href="exibir.html">a</a>
+</body>
+</html>
