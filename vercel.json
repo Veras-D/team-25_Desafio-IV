@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/gerenciamento_de_equipe/(.*)", "destination": "/gerenciamento_de_equipe/$1" }
+      { "source": "/(.*)", "destination": "/$1", "basePath": "landing-page" }
     ]
   }
   
