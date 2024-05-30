@@ -1,5 +1,5 @@
 {
     "routes": [
-      { "src": "/gerenciamento_de_equipe", "dest": "/gerenciamento_de_equipe/index.html" }
+      { "src": "/gerenciamento_de_equipe", "dest": "/" }
     ]
 }
