@@ -1,0 +1,168 @@
+Not enough data for ticker AGRX11.SA
+Not enough data for ticker AJFI11.SA
+ARCT11.SA: No timezone found, symbol may be delisted
+Not enough data for ticker APXM11.SA
+No data found for ticker ARCT11.SA
+Not enough data for ticker AROA11.SA
+Not enough data for ticker ASRF11.SA
+Not enough data for ticker AURB11.SA
+BBIM11.SA: No price data found, symbol may be delisted (1mo 1925-06-25 -> 2024-06-01)
+No data found for ticker BBIM11.SA
+Not enough data for ticker BICE11.SA
+Not enough data for ticker BIPD11.SA
+Not enough data for ticker BLCP11.SA
+BLOG11.SA: No timezone found, symbol may be delisted
+Not enough data for ticker BLMR11.SA
+No data found for ticker BLOG11.SA
+BPLC11.SA: No timezone found, symbol may be delisted
+No data found for ticker BPLC11.SA
+Not enough data for ticker BRIM11.SA
+Not enough data for ticker BRZP11.SA
+Not enough data for ticker BTHI11.SA
+Not enough data for ticker BTSG11.SA
+Not enough data for ticker BTSI11.SA
+BZEL11.SA: No timezone found, symbol may be delisted
+Not enough data for ticker BTWR11.SA
+No data found for ticker BZEL11.SA
+Not enough data for ticker CACR11.SA
+Not enough data for ticker CFHI11.SA
+CIXM11.SA: No timezone found, symbol may be delisted
+Not enough data for ticker CFII11.SA
+No data found for ticker CIXM11.SA
+Not enough data for ticker CLIN11.SA
+COPP11.SA: No timezone found, symbol may be delisted
+CORM11.SA: No timezone found, symbol may be delisted
+No data found for ticker COPP11.SA
+No data found for ticker CORM11.SA
+CPFO11.SA: No timezone found, symbol may be delisted
+No data found for ticker CPFO11.SA
+Not enough data for ticker CPOF11.SA
+Not enough data for ticker CPSH11.SA
+CSMC11.SA: No timezone found, symbol may be delisted
+No data found for ticker CSMC11.SA
+CVPR11.SA: No timezone found, symbol may be delisted
+No data found for ticker CVPR11.SA
+DLMT11.SA: No timezone found, symbol may be delisted
+No data found for ticker DLMT11.SA
+EQIA11.SA: No timezone found, symbol may be delisted
+No data found for ticker EQIA11.SA
+Not enough data for ticker ERCR11.SA
+ESUD11.SA: No timezone found, symbol may be delisted
+No data found for ticker ESUD11.SA
+Not enough data for ticker ESUU11.SA
+FEXC11.SA: No timezone found, symbol may be delisted
+No data found for ticker FEXC11.SA
+Not enough data for ticker FLFL11.SA
+FRHY11.SA: No timezone found, symbol may be delisted
+No data found for ticker FRHY11.SA
+Not enough data for ticker FZDB11.SA
+Not enough data for ticker GALG11.SA
+Not enough data for ticker GARE11.SA
+Not enough data for ticker GCRA11.SA
+GESE11B.SA: No timezone found, symbol may be delisted
+No data found for ticker GESE11B.SA
+GURB11.SA: No timezone found, symbol may be delisted
+No data found for ticker GURB11.SA
+Not enough data for ticker GZIT11.SA
+HBRH11.SA: No timezone found, symbol may be delisted
+No data found for ticker HBRH11.SA
+Not enough data for ticker HGBL11.SA
+HGRS11.SA: No timezone found, symbol may be delisted
+No data found for ticker HGRS11.SA
+HILG11.SA: No timezone found, symbol may be delisted
+No data found for ticker HILG11.SA
+Not enough data for ticker HREC11.SA
+Not enough data for ticker IAAG11.SA
+ICNE11.SA: No timezone found, symbol may be delisted
+No data found for ticker ICNE11.SA
+Not enough data for ticker ISCJ11.SA
+Not enough data for ticker ITRI11.SA
+Not enough data for ticker JBFO11.SA
+Not enough data for ticker JCCJ11.SA
+JRDM11.SA: No timezone found, symbol may be delisted
+No data found for ticker JRDM11.SA
+Not enough data for ticker KDIF11.SA
+Not enough data for ticker KNHF11.SA
+KNPR11.SA: No timezone found, symbol may be delisted
+No data found for ticker KNPR11.SA
+Not enough data for ticker KNUQ11.SA
+Not enough data for ticker KORE11.SA
+LAVF11.SA: No timezone found, symbol may be delisted
+No data found for ticker LAVF11.SA
+Not enough data for ticker LPLP11.SA
+MCHF11.SA: No timezone found, symbol may be delisted
+No data found for ticker MCHF11.SA
+MGLG11.SA: No timezone found, symbol may be delisted
+MGRI11.SA: No timezone found, symbol may be delisted
+No data found for ticker MGLG11.SA
+No data found for ticker MGRI11.SA
+Not enough data for ticker MMPD11.SA
+Not enough data for ticker MORC11.SA
+Not enough data for ticker NCRA11.SA
+NVIF11B.SA: No timezone found, symbol may be delisted
+No data found for ticker NVIF11B.SA
+Not enough data for ticker OCRE11.SA
+Not enough data for ticker OGHY11.SA
+OPTM11.SA: No timezone found, symbol may be delisted
+No data found for ticker OPTM11.SA
+PATB11.SA: No timezone found, symbol may be delisted
+No data found for ticker PATB11.SA
+PCAS11.SA: No timezone found, symbol may be delisted
+No data found for ticker PCAS11.SA
+PLOG11.SA: No timezone found, symbol may be delisted
+No data found for ticker PLOG11.SA
+Not enough data for ticker PMFO11.SA
+Not enough data for ticker PNCR11.SA
+Not enough data for ticker PNPR11.SA
+Not enough data for ticker PNRC11.SA
+PRTS11.SA: No timezone found, symbol may be delisted
+PULV11.SA: No timezone found, symbol may be delisted
+No data found for ticker PRTS11.SA
+No data found for ticker PULV11.SA
+Error processing ticker QIRI11: index 0 is out of bounds for axis 0 with size 0
+Not enough data for ticker RBRI11.SA
+Not enough data for ticker RCFF11.SA
+RDPD11.SA: No timezone found, symbol may be delisted
+No data found for ticker RDPD11.SA
+Not enough data for ticker RZAT11.SA
+Not enough data for ticker SAPI11.SA
+SHSO11.SA: No timezone found, symbol may be delisted
+No data found for ticker SHSO11.SA
+Not enough data for ticker SIGR11.SA
+Not enough data for ticker SMRE11.SA
+Not enough data for ticker SNEL11.SA
+Not enough data for ticker SNME11.SA
+Not enough data for ticker SOLR11.SA
+Not enough data for ticker SPMO11.SA
+SPVJ11.SA: No timezone found, symbol may be delisted
+No data found for ticker SPVJ11.SA
+Not enough data for ticker SRVD11.SA
+TCPF11.SA: No timezone found, symbol may be delisted
+Not enough data for ticker STRX11.SA
+No data found for ticker TCPF11.SA
+Not enough data for ticker TJKB11.SA
+Not enough data for ticker TRBL11.SA
+Not enough data for ticker TSER11.SA
+Not enough data for ticker TVRI11.SA
+VIDS11.SA: No timezone found, symbol may be delisted
+Not enough data for ticker VGRI11.SA
+No data found for ticker VIDS11.SA
+Not enough data for ticker VIGT11.SA
+VJFD11.SA: No timezone found, symbol may be delisted
+VLIQ11.SA: No timezone found, symbol may be delisted
+VLOL11.SA: No timezone found, symbol may be delisted
+No data found for ticker VJFD11.SA
+No data found for ticker VLIQ11.SA
+No data found for ticker VLOL11.SA
+VSEC11.SA: No timezone found, symbol may be delisted
+Not enough data for ticker VRTM11.SA
+No data found for ticker VSEC11.SA
+VTPL11.SA: No timezone found, symbol may be delisted
+No data found for ticker VTPL11.SA
+Not enough data for ticker VXXV11.SA
+XTED11.SA: No timezone found, symbol may be delisted
+No data found for ticker XTED11.SA
+YUFI11B.SA: No timezone found, symbol may be delisted
+Not enough data for ticker YUFI11.SA
+No data found for ticker YUFI11B.SA
+Not enough data for ticker ZAGH11.SA
