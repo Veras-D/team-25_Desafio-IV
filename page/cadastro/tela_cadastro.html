@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastrar-se</title>
+    <link rel="stylesheet" href="./estilo_cadastro.css">
 </head>
 <body>
-    
+    <main id="conteudo">
+        <form id="inscricaoUsuario" class="dados_cliente" action="/submit" method="post">
+            <div id="inserirDados">
+                <img id="imagemLogo" src="./assets/logo.png"> 
+                <input class="dados" type="text" id="nome" name="nome" placeholder="Nome" required>
+                <input class="dados" type="email" id="email" name="email" placeholder="E-mail" required>
+                <input class="dados" type="password" id="senha" name="senha" placeholder="Senha" required>
+                <input class="dados" type="password" id="confimar_senha" name="senha" placeholder="Confirme sua senha" required>
+
+                <div id="opcaoCadastro">
+                    <a><button type="submit" class="botaoCadastro">Cadastrar-se</button></a>
+                    <a id="pularCadastro" href="#">Já possui conta?</a>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
