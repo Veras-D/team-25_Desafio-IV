@@ -5,7 +5,7 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 
 const app = express();
-app.use(express.static('public'));
+app.use(express.static('Page'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended:true
