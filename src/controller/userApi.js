@@ -2,7 +2,7 @@ const router = require('express').Router();
 const User = require('../models/User');
 
 router.get('/', (req, res) => {
-    res.redirect('/cadastro.html');
+    res.redirect('/cadastro/tela_cadastro.html');
 });
 
 router.post('/users', async (req, res) => {
@@ -21,7 +21,7 @@ router.post('/users', async (req, res) => {
     
     try {
         await User.create(user);
-        res.status(201).redirect('/sucesso.html');
+        res.status(201).redirect('/tela_obrigado/obrigado.html');
     } catch (error) {
         res.status(500).json({error: error});
     }
