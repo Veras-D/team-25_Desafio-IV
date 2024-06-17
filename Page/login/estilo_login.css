@@ -97,3 +97,18 @@ body {
         justify-content: center;
     }
 }
+
+#senha_e_icon {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    width: 100%;
+    padding-left: 93px;
+}
+
+.icon__olho {
+    cursor: pointer;
+    position: absolute;
+    width: 2.5%;
+    margin-left: 275px;
+}
