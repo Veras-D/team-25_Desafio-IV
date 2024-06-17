@@ -75,18 +75,18 @@ body {
     color:#FF9F76;
 }
 
+#opcoesCadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
 
-.botaoRegistrar{
-
+.outraOpcao{
     color: #459EDF;
     font-size: 16px;
 }
 
-
-.esqueciSenha {
-    border: none;
-    color:#459EDF;
-}
 @media only screen and (max-width: 700px) {
     #imagemLogo {
         display: none;
