@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="estilo_login.css">
 </head>
-
 <body>
     <main id="conteudo">
-        <form id="inscricaoUsuario" action="/submit" method="post">
+        <form id="inscricaoUsuario" action="/api/login" method="post">
             <div id="inserirDados">
                 <img id="imagemLogo" src="../assets/logo.png"> 
-                <input type="text" placeholder="Email" class="dados">
-                <div id="senha_e_icon"><input type="password" placeholder="Senha" class="dados" id="senha">
-                <img class="icon__olho" src="../assets/olho.svg" onclick="mostrarSenha('senha')"> </div>
-
-                <div id="botaoEnviar">
-                    <a href="#"><button class="botaoDois">Enviar</button></a>
+                <input type="text" name="email" placeholder="E-mail" class="dados" required>
+                <div id="senha_e_icon">
+                    <input type="password" name="senha" placeholder="Senha" class="dados" id="senha" required>
+                    <img class="icon__olho" src="../assets/olho.svg" onclick="mostrarSenha('senha')">
                 </div>
-
+                <div id="botaoEnviar">
+                    <button type="submit" class="botaoDois">Enviar</button>
+                </div>
                 <div id="opcoesCadastro">
                     <a href="../cadastro/tela_cadastro.html" id="botaoRegistrar" class="outraOpcao">Não Possui Conta?</a>
                     <a href="#" id="esqueciSenha" class="outraOpcao">Esqueci minha senha</a>
@@ -28,9 +26,7 @@
             </div>
         </form>
     </main>
-
     <script src="script.js"></script>
     <script src="censura_senha.js"></script>
 </body>
-
 </html>

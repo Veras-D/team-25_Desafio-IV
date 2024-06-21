@@ -8,18 +8,21 @@
 </head>
 <body>
     <main id="conteudo">
-        <form id="inscricaoUsuario" class="dados_cliente" action="/submit" method="post">
+        <form id="inscricaoUsuario" class="dados_cliente" action="/api/users" method="post">
             <div id="inserirDados">
                 <img id="imagemLogo" src="../assets/logo.png"> 
                 <input class="dados" type="text" id="nome" name="nome" placeholder="Nome" required>
                 <input class="dados" type="email" id="email" name="email" placeholder="E-mail" required>
-                <div id="senha_e_icon"><input class="dados" type="password" id="senha" name="senha" placeholder="Senha" required>
-                <img class="icon__olho" src="../assets/olho.svg" onclick="mostrarSenha('senha',0)"></div>
-                <div id="senha_e_icon"><input class="dados" type="password" id="confimar_senha" name="senha" placeholder="Confirme sua senha" required>
-                <img class="icon__olho" src="../assets/olho.svg" onclick="mostrarSenha('confimar_senha',1)"></div>
-
+                <div id="senha_e_icon">
+                    <input class="dados" type="password" id="senha" name="senha" placeholder="Senha" required>
+                    <img class="icon__olho" src="../assets/olho.svg" onclick="mostrarSenha('senha',0)">
+                </div>
+                <div id="senha_e_icon">
+                    <input class="dados" type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme sua senha" required>
+                    <img class="icon__olho" src="../assets/olho.svg" onclick="mostrarSenha('confirmar_senha',1)">
+                </div>
                 <div id="opcaoCadastro">
-                    <a><button type="submit" class="botaoCadastro">Cadastrar-se</button></a>
+                    <button type="submit" class="botaoCadastro">Cadastrar-se</button>
                     <a id="pularCadastro" href="../login/login.html">Já possui conta?</a>
                 </div>
             </div>
