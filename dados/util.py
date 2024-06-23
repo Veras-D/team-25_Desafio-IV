@@ -44,7 +44,7 @@ class DataDashboard:
             # Converter dados em DataFrame
             colunas = ['Timestamp', 'Open', 'High', 'Low', 'Close', 'Volume', 'CloseTime', 'QuoteAssetVolume', 'NumberOfTrades', 'TakerBuyBaseAssetVolume', 'TakerBuyQuoteAssetVolume', 'Ignore']  
             dados = pd.DataFrame(dados_historicos, columns=colunas).astype(float)
-            dados.loc[dados['High'] == 138070.000000] = np.NaN
+            dados.loc[dados['High'] == 138070.000000] = pd.NA
             dados = dados.ffill()
             # Converter o timestamp para datetime
             dados['Timestamp'] = pd.to_datetime(dados['Timestamp'], unit='ms').astype(str)
