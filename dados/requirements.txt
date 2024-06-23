@@ -10,4 +10,3 @@ yfinance
 datetime
 scipy
 requests
-json
