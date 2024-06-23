@@ -1,6 +1,7 @@
 import streamlit as st
 import plotly.express as px
 import pandas as pd
+import matplatlib.pyplot as plt
 from util import DataDashboard
 
 
@@ -13,8 +14,8 @@ ativos = ['BTC', 'ETH', 'MATIC', 'INJ', 'NEAR', 'MANA', 'RNDR', 'ADA', 'LINK',
 data_dashboard = DataDashboard()
 dados_cripto = data_dashboard.bancoDeDados()
 
-# plt.hist(dados_cripto['retorno'], bins = 75)
-# plt.show()
+plt.hist(dados_cripto['retorno'], bins = 75)
+plt.show()
 
 dados_cripto.groupby('mes').agg({'retorno': 'sum'}).plot(kind='bar')  # Melhor mes para investir (menor valor)  # Testar outro alem do sum  # Rentabilidade por mes
 dados_cripto.groupby('dia').agg({'retorno': 'sum'}).plot(kind='bar')  # Melhor dia para investir (menor valor)
