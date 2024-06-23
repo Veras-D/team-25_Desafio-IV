@@ -6,3 +6,5 @@ seaborn
 scikit-learn
 plotly
 pandas_datareader
+yfinance
+datetime
