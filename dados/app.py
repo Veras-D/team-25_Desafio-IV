@@ -1,7 +1,7 @@
 import streamlit as st
 import plotly.express as px
 import pandas as pd
-import matplatlib.pyplot as plt
+import matplotlib.pyplot as plt
 from util import DataDashboard
 
 
