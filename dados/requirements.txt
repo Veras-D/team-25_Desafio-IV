@@ -8,3 +8,6 @@ plotly
 pandas_datareader
 yfinance
 datetime
+scipy
+requests
+json
