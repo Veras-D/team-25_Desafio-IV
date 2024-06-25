@@ -41,18 +41,28 @@ if st.sidebar.button("Analise de Retornos"):
             'FET', 'GALA', 'VET', 'MKR', 'FIL', 'SOL', 'DOT', 'AGIX', 'AVAX',
             'PENDLE', 'THETA', 'SHIB', 'TON', 'OP', 'BNB', 'ICP']
 
-    option = st.selectbox('Escolha uma Criptomoeda: ', ativos)
+    # Inicializar o estado da seleção se ainda não existir
+    if 'selected_crypto' not in st.session_state:
+        st.session_state.selected_crypto = 'BTC'  # Valor padrão
 
-    dados_cripto = data_dashboard.bancoDeDados(symbol=f'{option}USDT')
+    def update_selection():
+        st.session_state.selected_crypto = st.session_state.crypto_selectbox
+
+    option = st.selectbox('Escolha uma Criptomoeda: ', ativos, 
+                          key='crypto_selectbox',
+                          index=ativos.index(st.session_state.selected_crypto),
+                          on_change=update_selection)
+
+    dados_cripto = data_dashboard.bancoDeDados(symbol=f'{st.session_state.selected_crypto}USDT')
 
     col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader(f"Dados de {option}")
+        st.subheader(f"Dados de {st.session_state.selected_crypto}")
         st.dataframe(dados_cripto, use_container_width=True)
 
     with col2:
-        st.subheader(f"Retorno e Retorno Acumulado de {option}")
+        st.subheader(f"Retorno e Retorno Acumulado de {st.session_state.selected_crypto}")
         st.line_chart(dados_cripto, y=['retorno', 'retorno_diario_acumulado'])
 
     st.header("Análises Agregadas")
@@ -140,11 +150,21 @@ if st.sidebar.button("Comparação de Retornos"):
             'FET', 'GALA', 'VET', 'MKR', 'FIL', 'SOL', 'DOT', 'AGIX', 'AVAX',
             'PENDLE', 'THETA', 'SHIB', 'TON', 'OP', 'BNB', 'ICP']
 
-    option = st.selectbox('Escolha uma Criptomoeda: ', ativos)
+    # Inicializar o estado da seleção se ainda não existir
+    if 'selected_crypto_comparison' not in st.session_state:
+        st.session_state.selected_crypto_comparison = 'ETH'  # Valor padrão
 
-    dados_cripto = data_dashboard.bancoDeDados(symbol=f'{option}USDT')
+    def update_selection_comparison():
+        st.session_state.selected_crypto_comparison = st.session_state.crypto_selectbox_comparison
 
-    btc = data_dashboard.bancoDeDados()
+    option = st.selectbox('Escolha uma Criptomoeda: ', ativos, 
+                          key='crypto_selectbox_comparison',
+                          index=ativos.index(st.session_state.selected_crypto_comparison),
+                          on_change=update_selection_comparison)
+
+    dados_cripto = data_dashboard.bancoDeDados(symbol=f'{st.session_state.selected_crypto_comparison}USDT').tail(713)
+
+    btc = data_dashboard.bancoDeDados().tail(713)
     sp500 = data_dashboard.get_close_data('^GSPC')
     ibove = data_dashboard.get_close_data('^BVSP')
     
@@ -152,15 +172,14 @@ if st.sidebar.button("Comparação de Retornos"):
     btc['Rentabilidade'] = btc['Close'] / btc['Close'].iloc[0]
     sp500['Rentabilidade'] = sp500['Close'] / sp500['Close'].iloc[0]
     ibove['Rentabilidade'] = ibove['Close'] / ibove['Close'].iloc[0]
-    # Criando o gráfico com Plotly
+    
     fig = go.Figure()
 
-    fig.add_trace(go.Scatter(x=dados_cripto.index, y=dados_cripto['Rentabilidade'], mode='lines', name=f'{option}'))
+    fig.add_trace(go.Scatter(x=dados_cripto.index, y=dados_cripto['Rentabilidade'], mode='lines', name=f'{st.session_state.selected_crypto_comparison}'))
     fig.add_trace(go.Scatter(x=btc.index, y=btc['Rentabilidade'], mode='lines', name='BTC'))
     fig.add_trace(go.Scatter(x=sp500.index, y=sp500['Rentabilidade'], mode='lines', name='S&P 500'))
     fig.add_trace(go.Scatter(x=ibove.index, y=ibove['Rentabilidade'], mode='lines', name='IBOVESPA'))
 
-    # Ajustando o layout do gráfico
     fig.update_layout(
         title='Comparação de Rentabilidade',
         xaxis_title='Data',
@@ -170,4 +189,12 @@ if st.sidebar.button("Comparação de Retornos"):
     )
 
     st.plotly_chart(fig)
+
+else:
+    col_l, col_c, col_r = st.columns(3)
+    
+    with col_c:
+        st.image("./Page/assets/logo.png", width=300, use_column_width=True)
+        st.markdown("<h1 style='text-align: center;'>Dashboard Criptomoedas</h1>", unsafe_allow_html=True)
+
 st.sidebar.divider()
