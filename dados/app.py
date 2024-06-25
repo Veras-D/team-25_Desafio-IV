@@ -21,14 +21,14 @@ st.markdown(
 )
 
 with st.sidebar:
-    st.image("/home/veras/Veras/scripts/team-25_Desafio-IV/Page/assets/logo.png")
+    st.image("./Page/assets/logo.png")
 
 st.sidebar.divider()
 if st.sidebar.button("Home"):
     col_l, col_c, col_r = st.columns(3)
     
     with col_c:
-        st.image("/home/veras/Veras/scripts/team-25_Desafio-IV/Page/assets/logo.png", width=300, use_column_width=True)
+        st.image("./Page/assets/logo.png", width=300, use_column_width=True)
         st.markdown("<h1 style='text-align: center;'>Dashboard Criptomoedas</h1>", unsafe_allow_html=True)
 
 st.sidebar.divider()
