@@ -152,4 +152,4 @@ class DataDashboard:
     def get_close_data(self, papel: str):
         papel = yf.Ticker(papel)
         hist = papel.history(period="max", interval = "1d")
-        return hist['Close'].tail(713)
+        return hist.tail(713)
