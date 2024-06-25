@@ -6,6 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from util import DataDashboard
 
+
 st.set_page_config(layout="wide", page_title="FinanceIN")
 st.markdown(
     """

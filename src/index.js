@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
     extended:true
 }));
 
-const url_db = "mongodb://127.0.0.1:27017/trilhas_inova";
+const url_db = "mongodb+srv://pgsilva2002:_trilhas_inova_desafio_25@cluster0.nsscd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.set('strictQuery', true);
 mongoose.connect(url_db)
         .then(() => {
