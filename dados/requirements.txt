@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+plotly
+pandas_datareader
+yfinance
+datetime
+scipy
+requests

@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+  /*NAVBAR*/
+  body{
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    background-color: #FFDDDF;
+  }
+  
+  nav{
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+  }
+  
+  .menu {
+    padding: 16px 0;
+  }
+  
+  .itensNav {
+    font-size: large;
+    color: #232E26;
+    text-decoration: none;
+    width: fit-content;
+  }
+  
+  .itensNav:hover {
+    color: #FFD050;
+    transition: .3s;
+  }
+  
+  nav .menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .logo-title{
+    color: #232E26;
+    font-size: 18px;
+  }
+  
+  #contact {
+    border: 1px solid #232E26;
+    border-radius: 50px;
+  }
+  /*FIM DO NAVBAR*/
+  
+  
+  /*PRIMEIRAPÁGINA*/
+  #firstPage{
+    /* height: 90vh;
+    width: 100%; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #about {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+  
+  #presentation {
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 5%;
+    padding-inline-start: 8%;
+    padding-inline-end: 8%;
+    color: black;
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+  
+  #imgPresentation {
+    flex-direction:row;
+    width: 430px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    
+  }
+  
+  .textPresentation {
+    margin-right: 12%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  
+  /*Botão*/
+  #buttonEnterContact{
+      width: fit-content;
+      height: fit-content;
+  }
+  
+  #enterContact {
+    background-color: #F2775D;
+    color: #FFF;
+    width: 220px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  #enterContact:hover{
+    transition: .3s;
+    transform: scale(1.1);
+  }
+
+
+  /*SECTION DE NUMEROS DOS USUARIOS*/
+  #numerosUsuarios {
+    padding: 0 70px;
+  }
+
+  .information{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+  .mision{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 40px;  
+    background-color: #FFFFFF;
+}
+
+.vision{
+    width: 562px;
+    left: 10px;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+}
+  
+  
+  
+  /*SEGUNDA PÁGINA*/
+  #news {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    padding: 0 4rem 4rem 4rem;
+    box-sizing: border-box;
+    gap: 10vh;
+  }
+  
+  #trending {
+    margin-left: 3rem;
+  }
+  
+  #otherNews {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    gap: 2vh;
+  }
+
+  #listagemFuncionalidade {
+    text-decoration: none;
+  }
+  
+
+  /*TERCEIRA PÁGINA*/
+  #motivational {
+      padding: 0 60px 60px 60px;
+  }
+  
+  #textMotivational{
+      letter-spacing: 2px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-block-end: 2rem;
+  }
+
+  #textAuthor {
+    font-size: 35px;
+  }
+
+  #textoPlano {
+    font-size: 16px;
+    margin: 0 9rem;
+  }
+  
+  
+  /*Faça parte da nossa equipe - última parte*/
+  .ourTeam{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+      flex-wrap: wrap;
+  }
+  
+  .personalCard{
+      background: #FFF;
+      height: 720px;
+      width: 305px;
+      margin: 15px;
+      position: relative;
+      overflow: hidden;
+      text-align:  center;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+  }
+  
+  .personalName{
+      color: #232536;
+      font-size: 18px;
+      padding: 2rem;
+  }
+  
+  .socialMedia{
+      display: flex;
+      justify-content: center;
+  }
+  
+  #beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+
+  .acessarPlano {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-block-end: 3rem;
+  }
+  
+  .botaoAcessar {
+    margin-top: 1rem;
+    border: 2px solid #F2775D;
+    border-radius: 50px;
+    padding: 10px 60px;
+    background-color: #FFF;
+  }
+
+  
+
+  /*INFORMAÇÕES*/
+  #conviteTime{
+    margin-block-end: 5rem;
+  }
+
+  #informationTeam{
+    margin: 40px 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .textoMaiorIgual {
+    font-size: 35px;
+  }
+
+
+
+  /*CLIENTES*/
+    #clientesSatisfeitos {
+        margin: 40px 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+  .avaliacaoCliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cardCliente {
+    background: #FFF;
+    height: 200px;
+    width: 350px;
+    margin: 15px;
+    overflow: hidden;
+    text-align:  center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #F2775D;
+    border-radius: 10px;
+    padding: 2vh;
+  }
+
+  .cardGeral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nomeCliente {
+    color: #232536;
+    font-size: 18px;
+    padding: 0 4vh;
+  }
+
+  .notinha {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    font-size: 14px;
+  }
+
+  .textoCliente {
+    padding: 2vh 0;
+    text-align: start;
+  }
+
+
+  #cadastrarUsuario {
+    padding: 0 90px;
+    margin-block-end: 5%;
+  }
+
+  .areaCompleta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+  .aprenderInvestir{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+    padding: 40px 40px 40px 0;  
+    background-color: #FFFFFF;
+}
+
+.textoInvestir {
+    font-size: 35px;
+}
+
+.vision{
+    width: 562px;
+    left: 10px;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+}
+  
+  /*FOOTER*/
+  /* Rodapé principal da pagina*/
+  footer {
+      background-color: #FFF;
+      padding: 50px 100px;
+  }
+  /* Rodapé principal da pagina* - FIM*/
