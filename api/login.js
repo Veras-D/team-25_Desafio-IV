@@ -1,7 +1,6 @@
-// api/login.js
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User');
+const User = require('../src/models/User');
 const bcrypt = require('bcrypt');
 
 router.post('/', async (req, res) => {
