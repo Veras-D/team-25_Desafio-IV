@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
     padding: 0%;
     margin: 0%;
@@ -5,7 +7,8 @@
   }
   /*NAVBAR*/
   body{
-    font-family: "Lato", sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
     background-color: #FFDDDF;
   }
   
@@ -76,7 +79,7 @@
   #presentation {
     display: flex;
     margin-top: 6rem;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding-inline-start: 8%;
     padding-inline-end: 8%;
     color: black;
@@ -121,6 +124,34 @@
     transition: .3s;
     transform: scale(1.1);
   }
+
+
+  /*SECTION DE NUMEROS DOS USUARIOS*/
+  #numerosUsuarios {
+    padding: 0 70px;
+  }
+
+  .information{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+  .mision{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 40px;  
+    background-color: #FFFFFF;
+}
+
+.vision{
+    width: 562px;
+    left: 10px;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+}
   
   
   
@@ -128,7 +159,8 @@
   #news {
     display: flex;
     align-items: center;
-    padding: 4rem;
+    margin-top: 5%;
+    padding: 0 4rem 4rem 4rem;
     box-sizing: border-box;
     gap: 10vh;
   }
@@ -151,7 +183,7 @@
 
   /*TERCEIRA PÁGINA*/
   #motivational {
-      padding: 60px 120px;
+      padding: 0 60px 60px 60px;
   }
   
   #textMotivational{
@@ -305,6 +337,41 @@
     padding: 2vh 0;
     text-align: start;
   }
+
+
+  #cadastrarUsuario {
+    padding: 0 90px;
+    margin-block-end: 5%;
+  }
+
+  .areaCompleta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+  .aprenderInvestir{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+    padding: 40px 40px 40px 0;  
+    background-color: #FFFFFF;
+}
+
+.textoInvestir {
+    font-size: 35px;
+}
+
+.vision{
+    width: 562px;
+    left: 10px;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+}
   
   /*FOOTER*/
   /* Rodapé principal da pagina*/
