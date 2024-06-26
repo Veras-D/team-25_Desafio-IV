@@ -4,7 +4,11 @@
   "builds": [
       { "src": "src/index.js", "use": "@vercel/node" }
   ],
+  "routes": [
+      { "src": "/api/(.*)", "dest": "/src/index.js" },
+      { "src": "/(.*)", "dest": "/src/index.js" }
+  ],
   "rewrites": [
-      { "source": "/(.*)", "destination": "/api" }
+      { "source": "/(.*)", "destination": "/src" }
   ]
 }
