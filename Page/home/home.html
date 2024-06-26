@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>FinanceIN - Home</title>
     <link rel="shortcut icon" href="../assets/logo.png"/>
     <link rel="stylesheet" href="/Page/home/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo-container">
-                <img src="../assets/logo.png" alt="Logo" class="logo-image">
-                <a href="home.html" class="home_button">
-                    <div class="logo">FinanceIN</div>
-                </a>
+    <header id="menuNavbar">
+        <nav>
+            <div class="logo">
+                <img src="/Page/assets/favicon-32x32.png" alt="Icon logo">
+                <h1 class="logo-title">FinanceIN</h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Planos</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Sobre</a></li>
+            <div id="menu">
+                <ul class="menu">
+                    <li><a  class="itensNav" href="">FAQ</a></li>
+                    <li><a  class="itensNav" href="" target="_blank">Sobre</a></li>
+                    <li><a  class="itensNav" href="Page/login/login.html">Sign in</a></li>
+                    <li id="contact"><a  class="itensNav" href="Page/cadastro/tela_cadastro.html" target="_blank">Sign up</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
+    
     <main>
         <section class="banner">
             <div class="orange-box">
@@ -70,8 +74,8 @@
         <section class="content">
             <div class="boxes1">
                 <div class="box">
-                    <h2>FIIs</h2>
-                    <ul>
+                    <h2 class="explicacaoDash">FIIs</h2>
+                    <ul class="detalhesDash">
                         <li>• Visualize a rentabilidade e os dividendos dos FIIs.</li>
                         <li>• Obtenha dados atualizados dos melhores fundos imobiliários.</li>
                         <li>• Acesse análises de especialistas do mercado imobiliário.</li>
@@ -82,8 +86,8 @@
             <div class="boxes2">
                 <div class="box_large"></div>
                 <div class="box">
-                    <h2>Mercado de Ações</h2>
-                    <ul>
+                    <h2 class="explicacaoDash">Mercado de Ações</h2>
+                    <ul class="detalhesDash">
                         <li>• Acesso gratuito às informações de todos os nossos parceiros.</li>
                         <li>• Receba alertas sobre as movimentações do mercado.</li>
                         <li>• Relatórios completos.</li>
@@ -93,8 +97,8 @@
             </div>
             <div class="boxes3">
                 <div class="box">
-                    <h2>Criptomoedas</h2>
-                    <ul>
+                    <h2 class="explicacaoDash">Criptomoedas</h2>
+                    <ul class="detalhesDash">
                         <li>• Monitore os preços das principais criptomoedas.</li>
                         <li>• Receba análises técnicas e recomendações.</li>
                         <li>• Esteja atualizado sobre notícias e novidades do mercado.</li>
@@ -105,6 +109,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-nav1">

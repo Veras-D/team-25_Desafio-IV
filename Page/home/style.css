@@ -1,75 +1,64 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+  }
 
 body {
-    background-color: #FFE5E5; 
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    background-color: #FFDDDF;
+}
+
+nav{
+    background-color: #FFF;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 1000;
-}
-
-header a {
-    color: inherit; 
-    text-decoration: none; 
-}
-
-header a:hover {
-    text-decoration: underline; 
-}
-
-.header-container {
-    width: 100%;
-    max-width: 1330px;
-    margin: 0 auto;
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-image {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
+    padding: 0 100px 0 100px;
+  }
+  
+  .menu {
+    padding: 16px 0;
+  }
+  
+  .itensNav {
+    font-size: large;
+    color: #232E26;
     text-decoration: none;
-    color: #000;
-}
+    width: fit-content;
+  }
+  
+  .itensNav:hover {
+    color: #FFD050;
+    transition: .3s;
+  }
+  
+  nav .menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .logo-title{
+    color: #232E26;
+    font-size: 18px;
+  }
+  
+  #contact {
+    border: 1px solid #232E26;
+    border-radius: 50px;
+  }
+  /*FIM DO NAVBAR*/
 
 main {
     flex: 1; 
@@ -148,7 +137,7 @@ main {
     margin-bottom: 60px;
 }
 
-h1 {
+.main_title h1 {
     text-align: center;
     margin: 20px 0 10px;
 }
@@ -193,16 +182,16 @@ p {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-h2 {
+.explicacaoDash {
     margin-top: 0;
 }
 
-ul {
+.detalhesDash {
     list-style: none;
     padding: 0;
 }
 
-li {
+.detalhesDash li {
     margin-bottom: 10px;
 }
 
