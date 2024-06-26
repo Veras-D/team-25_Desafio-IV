@@ -1,6 +1,7 @@
 {
     "cleanUrls": true,
     "rewrites": [
-        { "source": "/api/(.*)", "destination": "/src/controller/userApi.js" }
+        { "source": "/users", "destination": "/api/users" },
+        { "source": "/login", "destination": "/api/login" }
     ]
 }
