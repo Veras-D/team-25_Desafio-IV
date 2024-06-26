@@ -248,6 +248,10 @@
     gap: 4vh;
   }
 
+  .imageVerified {
+    width: 10%;
+  }
+
   .acessarPlano {
     display: flex;
     flex-direction: column;
@@ -377,10 +381,123 @@
     background-color: #FFFFFF;
 }
   
-  /*FOOTER*/
-  /* Rodapé principal da pagina*/
-  footer {
-      background-color: #FFF;
-      padding: 50px 100px;
-  }
-  /* Rodapé principal da pagina* - FIM*/
+/*FOOTER*/
+footer {
+  background-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: auto; 
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-block-end: 3vh;
+}
+
+.logo-title-footer {
+  color: #232E26;
+  font-size: 18px;
+}
+
+.footer-container {
+  max-width: 1330px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-nav1, .footer-nav2 {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav1 p {
+  color: #4F5665;
+  text-align: start;
+  margin-block-end: 4vh;
+  max-width: 60%;
+}
+
+
+/*LADO DIREITO DO FOOTER*/
+.footer-nav2 {
+  display: flex;
+  margin-top: 100px;
+  gap: 2rem;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav1_bottom p {
+  margin-top: 4vh;
+  font-size: 16px;
+  color: #AFB5C0;
+}
+
+.footer-nav2_top{
+  gap: 10rem;
+}
+
+.footer-nav1_middle, .footer-nav1_bottom, .footer-nav2_top {
+  display: flex;
+  flex-direction: row;
+}
+
+footer a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+footer a:hover {
+  text-decoration: underline; 
+}
+
+.footer-nav1_middle {
+  margin-left: -10px;
+  gap: 5px;
+}
+
+.footer-nav1_bottom {
+  margin-top: 10px;
+}
+
+.social-button {
+  display: inline-block;
+  margin: 0 10px;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.social-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: none; 
+}
