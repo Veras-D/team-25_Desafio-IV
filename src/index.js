@@ -27,3 +27,5 @@ app.use('/api', userApi);
 app.listen(port, () => {
   console.log(`SERVER IS UP on port ${port}`);
 });
+
+module.exports = app;  
