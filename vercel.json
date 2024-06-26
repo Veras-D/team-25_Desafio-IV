@@ -9,6 +9,6 @@
       { "src": "/(.*)", "dest": "/src/index.js" }
   ],
   "rewrites": [
-      { "source": "/(.*)", "destination": "/src" }
+      { "source": "/(.*)", "destination": "/api" }
   ]
 }
