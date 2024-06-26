@@ -4,13 +4,13 @@ const User = require('../src/models/User');
 const bcrypt = require('bcrypt');
 
 router.post('/', async (req, res) => {
-    const { email, senha } = req.body;
-
-    if (!email || !senha) {
-        return res.status(422).json({ message: 'E-mail e senha são obrigatórios' });
-    }
-
     try {
+        const { email, senha } = req.body;
+
+        if (!email || !senha) {
+            return res.status(422).json({ message: 'E-mail e senha são obrigatórios' });
+        }
+
         const user = await User.findOne({ email });
 
         if (!user) {
@@ -23,9 +23,13 @@ router.post('/', async (req, res) => {
             return res.status(401).json({ message: 'Senha incorreta' });
         }
 
-        res.status(200).redirect('/Page/home/home.html');
+        res.status(200).json({ 
+            message: 'Login bem-sucedido', 
+            redirectUrl: '/Page/home/home.html'
+        });
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        console.error('Erro ao fazer login:', error);
+        res.status(500).json({ message: 'Erro interno do servidor' });
     }
 });
 
