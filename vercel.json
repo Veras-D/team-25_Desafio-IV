@@ -3,9 +3,5 @@
     "cleanUrls": true,
     "builds": [
       { "src": "src/index.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-      { "src": "/api/(.*)", "dest": "src/index.js" },
-      { "src": "/(.*)", "dest": "src/index.js" }
     ]
   }
