@@ -5,11 +5,15 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 
 const app = express();
-app.use(express.static('Page')); // Serve arquivos estáticos da pasta Page
+
+// Configurando o Express para servir arquivos estáticos da pasta "Page"
+app.use(express.static(path.join(__dirname, 'Page')));
+
+// Configurando o Body-Parser para lidar com dados JSON e codificados em URL
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Configuração do MongoDB
+// Configurando o MongoDB
 const url_db = "mongodb+srv://pgsilva2002:_trilhas_inova_desafio_25@cluster0.nsscd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.set('strictQuery', true);
 mongoose.connect(url_db)
@@ -22,8 +26,9 @@ mongoose.connect(url_db)
         process.exit(-1);
     });
 
-// Incluindo as rotas da API
-app.use('/api', require('./controller/userApi'));
+// Importando e utilizando as rotas de API
+app.use('/api/users', require('./api/users'));
+app.use('/api/login', require('./api/login'));
 
 // Iniciando o servidor
 app.listen(port, () => {
