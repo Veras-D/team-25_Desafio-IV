@@ -16,13 +16,19 @@ router.post('/users', async (req, res) => {
     }
 
     try {
+        // Verifica se o e-mail já está em uso
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            return res.status(409).json({ message: 'Este e-mail já está em uso' });
+        }
+
         const hashedPassword = await bcrypt.hash(senha, 10);
         const user = new User({ nome, email, senha: hashedPassword });
 
         await user.save();
-        res.status(201).redirect('/Page/tela_obrigado/obrigado.html');
+        res.status(201).json({ message: 'Usuário criado com sucesso', redirectTo: '/Page/tela_obrigado/obrigado.html' });
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: 'Erro ao criar usuário', details: error.message });
     }
 });
 
@@ -47,9 +53,10 @@ router.post('/login', async (req, res) => {
             return res.status(401).json({ message: 'Senha incorreta' });
         }
 
-        res.status(200).redirect('/Page/home/home.html');
+        // Aqui você poderia gerar e enviar um token JWT
+        res.status(200).json({ message: 'Login bem-sucedido', redirectTo: '/Page/home/home.html' });
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: 'Erro ao fazer login', details: error.message });
     }
 });
 
