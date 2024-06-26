@@ -27,8 +27,8 @@ mongoose.connect(url_db)
     });
 
 // Importando e utilizando as rotas de API
-app.use('/api/users', require('./api/users'));
-app.use('/api/login', require('./api/login'));
+app.use('/api/users', require('../api/users'));
+app.use('/api/login', require('../api/login'));
 
 // Iniciando o servidor
 app.listen(port, () => {
