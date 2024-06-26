@@ -2,14 +2,10 @@
     "version": 2,
     "cleanUrls": true,
     "builds": [
-        { "src": "./src/index.js", "use": "@vercel/node" },
-        { "src": "./api/**/*.js", "use": "@vercel/node" },
-        { "src": "*.html", "use": "@vercel/static" },
-        { "src": "Page/**/*", "use": "@vercel/static" }
+      { "src": "src/index.js", "use": "@vercel/node" }
     ],
     "routes": [
-        { "src": "/api/(.*)", "dest": "/api/$1" },
-        { "src": "^/Page/(.*)", "dest": "/Page/$1" },
-        { "src": "/(.*)", "dest": "/index.html" }
+      { "src": "/api/(.*)", "dest": "src/index.js" },
+      { "src": "/(.*)", "dest": "src/index.js" }
     ]
-}
+  }

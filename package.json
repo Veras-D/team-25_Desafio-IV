@@ -2,18 +2,22 @@
   "name": "team-25_desafio-iv",
   "version": "1.0.0",
   "description": "Desafio IV",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "body-parser": "^1.20.2",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mongoose": "^8.4.4",
     "mongoose-sequence": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
