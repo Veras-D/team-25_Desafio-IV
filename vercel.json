@@ -2,13 +2,14 @@
     "version": 2,
     "cleanUrls": true,
     "rewrites": [
-        { "source": "/users", "destination": "/api/users" },
-        { "source": "/login", "destination": "/api/login" }
+      { "source": "/users", "destination": "/api/users" },
+      { "source": "/login", "destination": "/api/login" }
     ],
     "builds": [
-    { "src": "src/index.js", "use": "@vercel/node" }
+      { "src": "src/index.js", "use": "@vercel/node" }
     ],
     "routes": [
-    { "src": "/(.*)", "dest": "/src/index.js" }
-    ]      
-}
+      { "src": "/(.*)", "dest": "/src/index.js" }
+    ]
+  }
+  

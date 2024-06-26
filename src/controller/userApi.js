@@ -15,12 +15,11 @@ router.post('/users', async (req, res) => {
         return res.status(422).json({ message: 'As senhas não coincidem' });
     }
 
-    const hashedPassword = await bcrypt.hash(senha, 10);
-
-    const user = { nome, email, senha: hashedPassword };
-
     try {
-        await User.create(user);
+        const hashedPassword = await bcrypt.hash(senha, 10);
+        const user = new User({ nome, email, senha: hashedPassword });
+
+        await user.save();
         res.status(201).redirect('/Page/tela_obrigado/obrigado.html');
     } catch (error) {
         res.status(500).json({ error: error.message });
