@@ -1,7 +1,3 @@
 {
-    "cleanUrls": true,
-    "rewrites": [
-        { "source": "/users", "destination": "/api/users" },
-        { "source": "/login", "destination": "/api/login" }
-    ]
+    "cleanUrls": true
 }
