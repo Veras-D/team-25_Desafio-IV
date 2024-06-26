@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
-const bcrypt = require('bcrypt'); // Para verificar a senha hash
+const bcrypt = require('bcrypt');
 
 // Rota de cadastro
 router.post('/users', async (req, res) => {
