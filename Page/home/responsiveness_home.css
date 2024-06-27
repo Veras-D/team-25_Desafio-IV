@@ -21,6 +21,7 @@
         align-items: center;
         text-align: center;
     }
+    
     .orange-box {
         flex-direction: column; 
         width: 90%;
@@ -47,6 +48,7 @@
         flex-direction: column;
     }
 
+
     footer {
         display: flex;
         flex-direction: column;
@@ -55,16 +57,16 @@
         height: 500px;
     }
 
-    .footer-container {
+    .footerContainer {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-nav2 {
+    .footerRightSide {
         display: none; 
     }
 
-    .footer-nav1 {
+    .footerLeftSide {
         align-items: center;
 }
 

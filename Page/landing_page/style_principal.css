@@ -63,6 +63,10 @@ nav .menu li{
   border: 1px solid #232E26;
   border-radius: 50px;
 }
+
+.hamburger {
+  display: none;
+}
 /*FIM DO NAVBAR*/
 
 
@@ -151,6 +155,7 @@ nav .menu li{
   background-color: #FFFFFF;
   align-items: center;
 }
+
 
 
 /*PÁGINA DE FEATURES*/

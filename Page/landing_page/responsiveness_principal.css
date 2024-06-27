@@ -1,140 +1,206 @@
-@media only screen and (min-width: 800px) {
-
-}
-
 @media only screen and (max-width: 700px) {
-    body {
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
-    }
-
-    #imgPresentation {
-        display: none;
-    }
-
-
-    /*MENU HAMBURGUER*/
-    nav {
-        padding: 2rem;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }   
-
-    #menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 50%;
-        width: 100%;
-        height: 50%;
-        background-color: rgba(0,0,0,0.9);
-        z-index: 1000;
-    }
-
-    .menu {
-        display:flex;
-        flex-direction: column;
-    }
-
-    .itensNav {
-        color: white;
-        padding: 10px;
-        display: block;
-        text-decoration: none;
-    }
-
-    .itensNav:hover {
-        background-color: rgba(255,255,255,0.1);
-    }
-
-    .hamburger {
-        display: block;
-        top: 0;
-        right: 10px;
-        width: 30px;
-        height: 20px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    .hamburger span {
-        display: block;
-        height: 2px;
-        background-color: #232E26;
-        margin: 4px 4px;
-    }
-    /*NAVBAR*/
-
-
-    #presentationFinancein {
-        text-align: center;
-        justify-content: center;
-        font-size: 19px;
-    }
-
-    #about {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .textPresentation {
-        margin: 0;
-        text-align: center;
-        justify-content: center;
-    }
-
-    /*2° PARTE*/
-    #featuresFinancein {
-        flex-direction: column;
-        padding: 2rem;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #imageManCoins {
-        margin: 0;
-    }
-
-    #choosePlan {
-        margin: 0 15px 0 15px;
-        text-align: center;
-        font-size: 10px;
-        padding: 60px 0;
-    }
-
-    #textChoosePlan {
-        font-size: 20px;
-    }
-
-
-    /*FOOTER*/
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-        height: 500px;
-    }
-
-    .footerContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footerRightSide {
-        display: none; 
-    }
-
-    .footerLeftSide {
-        align-items: center;
+body {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/*MENU HAMBURGUER*/ 
+#menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1000;
+}
+
+.menu {
+    display:flex;
+    flex-direction: column;
+}
+
+.itensNav {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.itensNav:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.hamburger {
+    display: block;
+    top: 0;
+    right: 10px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    background-color: #232E26;
+    margin: 4px 4px;
+}
+
+#menuDivisionLarge {
+    display: none; /* hide the large menu when screen width is less than 700px */
+}
+/*NAVBAR*/
+
+
+/*PRIMEIRA PARTE*/
+#presentationFinancein {
+    text-align: center;
+    justify-content: center;
+    font-size: 19px;
+    margin-top: 5vh;
+}
+
+#about {
+    justify-content: center;
+    align-items: center;
+}
+
+.textPresentation {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+#imgPresentation {
+    display: none;
+}
+
+
+
+/*3° PARTE*/
+#featuresFinancein {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#imageManCoins {
+    display: none;
+}
+
+#exploreFeatures {
+    margin: 0;
+}
+
+
+
+/*SECTION DE ESCOLHA SEU PLANO*/
+#choosePlan {
+    margin: 0 15px 0 15px;
+    text-align: center;
+    font-size: 10px;
+    padding: 60px 0;
+}
+
+#textChoosePlan {
+    font-size: 24px;
+}
+
+#textPlan {
+    margin: 10px;
+}
+
+
+
+/*SECTION JUNTE-SE A NÓS*/
+#invitationUsers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textForUsers {
+    font-size: 24px;
+    text-align: center;
+}
+
+#invitationUsersText img {
+    width: 20rem;
+}
+
+
+
+/*SECTION RECOMENDAÇÃO*/
+#textRecommendationClients {
+    margin: 0;
+}
+
+#textRecommendationClients p {
+    margin: 0 2vh 2vh 2vh;
+}
+
+
+
+/*SECTION CADASTRAR*/
+#cardRegisterUser {
+    padding: 2vh 5vh;
+}
+
+.textLearnInvest {
+    padding: 4vh 0 4vh 0;
+    width: 80%;
+    text-align: center;
+}
+
+#enterRegistration {
+    margin-block-end: 4vh;
+}
+
+
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: 500px;
+}
+
+.footerContainer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerRightSide {
+    display: none; 
+}
+
+.footerLeftSide {
+    align-items: center;
+    margin-left: 0;
+}
+
+.footerLeftSide p {
+    text-align: center;
+}
+
+.copyright {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
 }
