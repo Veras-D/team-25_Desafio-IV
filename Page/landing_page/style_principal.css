@@ -1,404 +1,403 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 *{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-  }
-  /*NAVBAR*/
-  body{
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    background-color: #FFDDDF;
-  }
-  
-  nav{
-    background-color: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 100px 0 100px;
-  }
-  
-  .menu {
-    padding: 16px 0;
-  }
-  
-  .itensNav {
-    font-size: large;
-    color: #232E26;
-    text-decoration: none;
-    width: fit-content;
-  }
-  
-  .itensNav:hover {
-    color: #FFD050;
-    transition: .3s;
-  }
-  
-  nav .menu li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-  
-  .logoTitle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #232E26;
-    font-size: 18px;
-  }
-  
-  #contact {
-    border: 1px solid #232E26;
-    border-radius: 50px;
-  }
-  /*FIM DO NAVBAR*/
-  
-  
-  /*PRIMEIRAPÁGINA*/
-  #firstPage{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #about {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-  }
-  
-  #presentationFinancein {
-    display: flex;
-    margin-top: 6rem;
-    margin-bottom: 5%;
-    padding-inline-start: 8%;
-    padding-inline-end: 8%;
-    color: black;
-    font-size: 35px;
-    letter-spacing: 2px;
-  }
-  
-  #imgPresentation {
-    flex-direction:row;
-    width: 430px;
-    height: 350px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-    
-  }
-  
-  .textPresentation {
-    margin-right: 12%;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 400;
-  }
-  
-  /*Botão*/
-  #buttonRegistration {
-      width: fit-content;
-      height: fit-content;
-  }
-  
-  #enterRegistration {
-    background-color: #F2775D;
-    color: #FFF;
-    width: 220px;
-    height: 50px;
-    font-size: 15px;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
-  }
-  
-  #enterRegistration:hover{
-    transition: .3s;
-    transform: scale(1.1);
-  }
-
-
-
-  /*SECTION DE NUMEROS DOS USUARIOS*/
-  #informationNumberUsers {
-    padding: 0 70px;
-  }
-
-  .information{
-    display: flex;
-    justify-content: space-around;
-    background-color: #FFFFFF;
-    flex-wrap: wrap;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/*NAVBAR*/
+body{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  background-color: #FFDDDF;
 }
 
-  .numbersUsers {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 40px;  
-    background-color: #FFFFFF;
-    align-items: center;
+nav{
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px 0 100px;
 }
+
+.menu {
+  padding: 16px 0;
+}
+
+.itensNav {
+  font-size: large;
+  color: #232E26;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.itensNav:hover {
+  color: #FFD050;
+  transition: .3s;
+}
+
+nav .menu li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.logoTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #232E26;
+  font-size: 18px;
+}
+
+#contact {
+  border: 1px solid #232E26;
+  border-radius: 50px;
+}
+
+.hamburger {
+  display: none;
+}
+/*FIM DO NAVBAR*/
+
+
+
+/*PRIMEIRAPÁGINA*/
+#firstPage{
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#presentationFinancein {
+  display: flex;
+  margin-top: 6rem;
+  margin-bottom: 5%;
+  padding-inline-start: 8%;
+  padding-inline-end: 8%;
+  color: black;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+#imgPresentation {
+  flex-direction:row;
+  width: 430px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
   
-  /*SEGUNDA PÁGINA*/
-  #featuresFinancein {
-    display: flex;
-    align-items: center;
-    margin-top: 5%;
-    padding: 0 4rem 4rem 4rem;
-    box-sizing: border-box;
-    gap: 10vh;
-  }
-  
-  #imageManCoins {
-    margin-left: 3rem;
-  }
-  
-  #exploreFeatures {
-    display: flex;
-    flex-direction: column;
-    margin-right: 3rem;
-    gap: 2vh;
-  }
+}
 
-  #exploreFeaturesText {
-    font-weight: normal;
-  }
+.textPresentation {
+  margin-right: 12%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
 
-  #listingFeatures {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+/*Botão*/
+#buttonRegistration {
+  width: fit-content;
+  height: fit-content;
+}
 
-  #listingFeatures li {
-    list-style: none;
-  }
-  
-  #listingFeatures li img {
-    vertical-align: middle;
-    margin-right: 10px;
-  }
-  
+#enterRegistration {
+  background-color: #F2775D;
+  color: #FFF;
+  width: 220px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
 
-  /*TERCEIRA PÁGINA*/
-  #choosePlan {
-      padding: 0 60px 60px 60px;
-  }
-  
-  #textExplanationPlans {
-      letter-spacing: 2px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-      margin-block-end: 2rem;
-  }
-
-  #textChoosePlan {
-    font-size: 35px;
-  }
-
-  #textPlan {
-    font-size: 16px;
-    margin: 0 9rem;
-  }
-  
-  
-  /*Faça parte da nossa equipe - última parte*/
-  .allPlans {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 400px;
-      flex-wrap: wrap;
-  }
-  
-  .planCard {
-      background: #FFF;
-      height: 720px;
-      width: 305px;
-      margin: 15px;
-      position: relative;
-      overflow: hidden;
-      text-align:  center;
-      display: flex;
-      flex-direction: column;
-      gap: 13px;
-  }
-  
-  .planType {
-      color: #232536;
-      font-size: 18px;
-      padding: 2rem;
-  }
-  
-  .planBenefits {
-      display: flex;
-      justify-content: center;
-  }
-
-  .planBenefits ul li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .planBenefits ul li img {
-    width: 20px;
-    margin-right: 10px;
-  }
-  
-  .listBenefits {
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
-  }
-
-  .imageVerified {
-    width: 10%;
-  }
-
-  .accessPlan {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    margin-block-end: 3rem;
-  }
-  
-  .buttonAccess {
-    margin-top: 1rem;
-    border: 2px solid #F2775D;
-    border-radius: 50px;
-    padding: 10px 60px;
-    background-color: #FFF;
-  }
-
-  
-
-  /*INFORMAÇÕES*/
-  #invitationUsers {
-    margin-block-end: 5rem;
-  }
-
-  #invitationUsersText {
-    margin: 40px 290px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .textForUsers {
-    font-size: 35px;
-  }
+#enterRegistration:hover{
+  transition: .3s;
+  transform: scale(1.1);
+}
 
 
 
-  /*CLIENTES*/
-    #textRecommendationClients {
-        margin: 40px 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        gap: 2rem;
-    }
+/*SECTION DE NUMEROS DOS USUARIOS*/
+#informationNumberUsers {
+  padding: 0 70px;
+}
 
-  .reviewClient {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
+.information{
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  flex-wrap: wrap;
+}
 
-  .cardReviewClient {
-    background: #FFF;
-    height: 200px;
-    width: 350px;
-    margin: 15px;
-    overflow: hidden;
-    text-align:  center;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #F2775D;
-    border-radius: 10px;
-    padding: 2vh;
-  }
+.numbersUsers {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 40px;  
+  background-color: #FFFFFF;
+  align-items: center;
+}
 
-  .cardInformationClient {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .nameClient {
-    color: #232536;
-    font-size: 18px;
-    padding: 0 4vh;
-  }
 
-  .gradeClient {
-    display: flex;
-    flex-direction: row;
-    gap: 1vh;
-    font-size: 14px;
-  }
+/*PÁGINA DE FEATURES*/
+#featuresFinancein {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  padding: 0 4rem 4rem 4rem;
+  box-sizing: border-box;
+  gap: 10vh;
+}
 
-  .textClient {
-    padding: 2vh 0;
-    text-align: start;
-  }
+#imageManCoins {
+  margin-left: 3rem;
+}
+
+#exploreFeatures {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  gap: 2vh;
+}
+
+#exploreFeaturesText {
+  font-weight: normal;
+}
+
+#listingFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#listingFeatures li {
+  list-style: none;
+}
+
+#listingFeatures li img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+/*PÁGINA DE NOSSOS PLANOS*/
+#choosePlan {
+  padding: 0 60px 60px 60px;
+}
+
+#textExplanationPlans {
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-block-end: 2rem;
+}
+
+#textChoosePlan {
+  font-size: 35px;
+}
+
+#textPlan {
+  font-size: 16px;
+  margin: 0 9rem;
+}
+
+/*NOSSOS PLANOS*/
+.allPlans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  flex-wrap: wrap;
+}
+
+.planCard {
+  background: #FFF;
+  height: 720px;
+  width: 305px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align:  center;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.planType {
+  color: #232536;
+  font-size: 18px;
+  padding: 2rem;
+}
+
+.planBenefits {
+  display: flex;
+  justify-content: center;
+}
+
+.planBenefits ul li {
+  display: flex;
+  align-items: center;
+}
+
+.planBenefits ul li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.listBenefits {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.imageVerified {
+  width: 10%;
+}
+
+.accessPlan {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-block-end: 3rem;
+}
+
+.buttonAccess {
+  margin-top: 1rem;
+  border: 2px solid #F2775D;
+  border-radius: 50px;
+  padding: 10px 60px;
+  background-color: #FFF;
+}
+
+
+/*INFORMAÇÕES*/
+#invitationUsers {
+  margin-block-end: 5rem;
+}
+
+#invitationUsersText {
+  margin: 40px 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.textForUsers {
+  font-size: 35px;
+}
+
+
+/*CLIENTES*/
+#textRecommendationClients {
+  margin: 40px 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.reviewClient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cardReviewClient {
+  background: #FFF;
+  height: 200px;
+  width: 350px;
+  margin: 15px;
+  overflow: hidden;
+  text-align:  center;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #F2775D;
+  border-radius: 10px;
+  padding: 2vh;
+}
+
+.cardInformationClient {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameClient {
+  color: #232536;
+  font-size: 18px;
+  padding: 0 4vh;
+}
+
+.gradeClient {
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+  font-size: 14px;
+}
+
+.textClient {
+  padding: 2vh 0;
+  text-align: start;
+}
 
 
 /*SECTION CADASTRAR USUÁRIO*/
-  #cadastrarUsuario {
-    padding: 0 90px;
-    margin-block-end: 5%;
-  }
-
-  .areaCompleta{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #FFFFFF;
-    flex-wrap: wrap;
+#cardRegisterUser {
+  padding: 0 90px;
+  margin-block-end: 5%;
 }
 
-  .aprenderInvestir{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    gap: 2rem;
-    padding: 40px 40px 40px 0;  
-    background-color: #FFFFFF;
+.learnInvest {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+  flex-wrap: wrap;
 }
 
-.textoInvestir {
-    font-size: 35px;
+.textLearnInvest {
+display: flex;
+flex-direction: column;
+width: 40%;
+gap: 2rem;
+padding: 40px 40px 40px 0;  
+background-color: #FFFFFF;
 }
 
-.vision{
-    width: 562px;
-    left: 10px;
-    padding: 40px 20px;
-    background-color: #FFFFFF;
+.titleTextLearnInvest {
+font-size: 35px;
 }
-  
+
+
+
 /*FOOTER*/
 footer {
   background-color: #fff;
@@ -407,67 +406,6 @@ footer {
   position: relative;
   width: 100%;
   margin-top: auto; 
-}
-
-.logo-footer {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-block-end: 3vh;
-}
-
-.logo-title-footer {
-  color: #232E26;
-  font-size: 18px;
-}
-
-.footer-container {
-  max-width: 1330px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-nav1, .footer-nav2 {
-  margin-top: 2rem;
-  margin-left: 2rem;
-  text-decoration: none;
-  color: #000;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-nav1 p {
-  color: #4F5665;
-  text-align: start;
-  margin-block-end: 4vh;
-  max-width: 60%;
-}
-
-
-/*LADO DIREITO DO FOOTER*/
-.footer-nav2 {
-  display: flex;
-  margin-top: 100px;
-  gap: 2rem;
-  margin-right: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-nav1_bottom p {
-  margin-top: 4vh;
-  font-size: 16px;
-  color: #AFB5C0;
-}
-
-.footer-nav2_top{
-  gap: 10rem;
-}
-
-.footer-nav1_middle, .footer-nav1_bottom, .footer-nav2_top {
-  display: flex;
-  flex-direction: row;
 }
 
 footer a {
@@ -479,16 +417,47 @@ footer a:hover {
   text-decoration: underline; 
 }
 
-.footer-nav1_middle {
+.logoFooter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-block-end: 3vh;
+}
+
+.logoTitleFooter {
+  color: #232E26;
+  font-size: 18px;
+}
+
+.footerContainer {
+  max-width: 1330px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLeftSide, .footerRightSide {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLeftSide p {
+  color: #4F5665;
+  text-align: start;
+  margin-block-end: 4vh;
+  max-width: 60%;
+}
+
+.footerSocialNetwork {
   margin-left: -10px;
   gap: 5px;
 }
 
-.footer-nav1_bottom {
-  margin-top: 10px;
-}
-
-.social-button {
+.socialButton {
   display: inline-block;
   margin: 0 10px;
   width: 40px; 
@@ -496,26 +465,46 @@ footer a:hover {
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: 0.3s;
 }
 
-.social-button:hover {
+.socialButton:hover {
   background-color: #f0f0f0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.social-icon {
+.socialIcon {
   width: 100%;
   height: 100%;
   object-fit: cover; 
   border-radius: 50%;
 }
 
-a {
-  color: inherit; 
-  text-decoration: none; 
+.copyright {
+  margin-top: 10px;
 }
 
-a:hover {
-  text-decoration: none; 
+.copyright p {
+  margin-top: 4vh;
+  font-size: 16px;
+  color: #AFB5C0;
+}
+
+/*LADO DIREITO DO FOOTER*/
+.footerRightSide {
+  display: flex;
+  margin-top: 100px;
+  gap: 2rem;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerRightLinks {
+  gap: 10rem;
+}
+
+.footerSocialNetwork, .copyright, .footerRightLinks {
+  display: flex;
+  flex-direction: row;
 }

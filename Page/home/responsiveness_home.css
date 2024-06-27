@@ -1,10 +1,7 @@
-@media only screen and (max-width: 700px) {
-    body {
-        background-size: cover;
-        background-position: center;
-        width: 100%;
+@media (max-width: 768px) {
+    body, html {
+        overflow-y: auto;
     }
-
     nav {
         display: flex;
         justify-content: space-between;
@@ -62,112 +59,41 @@
     /*NAVBAR*/
 
 
-    /*PRIMEIRA PARTE*/
-    #presentationFinancein {
-        text-align: center;
-        justify-content: center;
-        font-size: 19px;
-        margin-top: 5vh;
-    }
 
-    #about {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .textPresentation {
-        margin: 0;
-        text-align: center;
-        justify-content: center;
-    }
-
-    #imgPresentation {
-        display: none;
-    }
-
-
-
-    /*3° PARTE*/
-    #featuresFinancein {
-        flex-direction: column;
-        padding: 2rem;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #imageManCoins {
-        display: none;
-    }
-
-    #exploreFeatures {
-        margin: 0;
-    }
-
-
-
-    /*SECTION DE ESCOLHA SEU PLANO*/
-    #choosePlan {
-        margin: 0 15px 0 15px;
-        text-align: center;
-        font-size: 10px;
-        padding: 60px 0;
-    }
-
-    #textChoosePlan {
-        font-size: 24px;
-    }
-
-    #textPlan {
-        margin: 10px;
-    }
-
-
-
-    /*SECTION JUNTE-SE A NÓS*/
-    #invitationUsers {
+/*COMEÇO DO MAIN*/
+    main {
+        padding: 80px 10px 40px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .textForUsers {
-        font-size: 24px;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    #invitationUsersText img {
-        width: 20rem;
+    .orange-box {
+        flex-direction: column; 
+        width: 90%;
+        padding: 10px;
+        background-color: #F9B67A;
+        gap: 10px;
+        height: 820px;
     }
 
-
-
-    /*SECTION RECOMENDAÇÃO*/
-    #textRecommendationClients {
-        margin: 0;
+    .text-box {
+        width: 100px;
+        height: 30px;
     }
 
-    #textRecommendationClients p {
-        margin: 0 2vh 2vh 2vh;
+    .main_title {
+        margin: 20px 0 40px;
     }
 
-
-
-    /*SECTION CADASTRAR*/
-    #cardRegisterUser {
-        padding: 2vh 5vh;
+    .box {
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
-
-    .textLearnInvest {
-        padding: 4vh 0 4vh 0;
-        width: 80%;
-        text-align: center;
-    }
-
-    #enterRegistration {
-        margin-block-end: 4vh;
-    }
-
 
 
     /*FOOTER*/
@@ -201,5 +127,31 @@
         width: 100%;
         justify-content: center;
         margin: 0;
+    }
+
+
+
+@media (max-width: 576px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .text-box {
+        width: 80px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+    .logo-image {
+        width: 30px;
+        height: 30px;
+    }
+    .text-box {
+        width: 70px;
+        height: 20px;
+    }
     }
 }
