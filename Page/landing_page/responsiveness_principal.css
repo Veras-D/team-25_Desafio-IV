@@ -52,36 +52,17 @@
         margin: 0;
     }
 
-    .article {
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-        > img {
-            height: 200px;
-        }
-      }
-
-    #otherNews {
-        margin-right: 0;
-    }
-
-    .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    #motivational {
+    #choosePlan {
         margin: 0 15px 0 15px;
         text-align: center;
         font-size: 10px;
         padding: 60px 0;
     }
 
-    #textAuthor {
+    #textChoosePlan {
         font-size: 20px;
     }
+
 
     /*ENTRE NO TIME*/
     #informationTeam {
