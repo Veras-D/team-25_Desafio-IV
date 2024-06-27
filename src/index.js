@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Conexão com o MongoDB
-const url_db = process.env.MONGODB_URI || "sua_string_de_conexão_aqui";
+const url_db = process.env.MONGODB_URI || "mongodb+srv://pgsilva2002:_trilhas_inova_desafio_25@cluster0.nsscd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.set('strictQuery', true);
 mongoose.connect(url_db)
   .then(() => {
