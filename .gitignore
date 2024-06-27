@@ -1,3 +1,5 @@
 node_modules/
 .vercel
 .env
+dados/__pycache__
+dados/.ipynb_checkpoints
