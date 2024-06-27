@@ -2,7 +2,7 @@
     "version": 2,
     "cleanUrls": true,
     "functions": {
-      "node api/index.js": {
+      "api/index.js": {
         "memory": 1024,
         "maxDuration": 30
       },
@@ -18,7 +18,7 @@
       },
       {
         "source": "/(.*)",
-        "destination": "/index.html"
+        "destination": "/api"
       }
     ]
   }  
