@@ -2,7 +2,7 @@
   "name": "team-25_desafio-iv",
   "version": "1.0.0",
   "description": "Desafio IV",
-  "main": "src/index.js",
+  "main": "api/index.js",
   "engines": {
     "node": "20.x"
   },
