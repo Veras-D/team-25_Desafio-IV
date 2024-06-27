@@ -3,7 +3,7 @@
 *{
     padding: 0%;
     margin: 0%;
-  }
+}
 
 body {
     font-family: "Rubik", sans-serif;
@@ -18,23 +18,23 @@ nav{
     justify-content: space-between;
     padding: 0 100px 0 100px;
 }
-  
+
 .menu {
     padding: 16px 0;
 }
-  
+
 .itensNav {
     font-size: large;
     color: #232E26;
     text-decoration: none;
     width: fit-content;
 }
-  
+
 .itensNav:hover {
     color: #FFD050;
     transition: .3s;
 }
-  
+
 nav .menu li{
     list-style: none;
     display: inline-block;
@@ -42,23 +42,31 @@ nav .menu li{
     font-size: 16px;
     font-weight: 400;
 }
-  
+
 .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
 }
-  
-.logo-title{
+
+.logoTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #232E26;
     font-size: 18px;
 }
-  
+
 #contact {
     border: 1px solid #232E26;
     border-radius: 50px;
 }
-  /*FIM DO NAVBAR*/
+
+.hamburger {
+    display: none;
+}
+/*FIM DO NAVBAR*/
 
   
   
