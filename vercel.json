@@ -13,10 +13,6 @@
     },
     "rewrites": [
       {
-        "source": "/api/(.*)",
-        "destination": "/api/controller/$1"
-      },
-      {
         "source": "/(.*)",
         "destination": "/api"
       }
