@@ -19,63 +19,9 @@
     #imgPresentation {
         display: none;
     }
-    /*NAVBAR*/
-
-    #presentationFinancein {
-        text-align: center;
-        justify-content: center;
-        font-size: 19px;
-    }
-
-    #about {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .textPresentation {
-        margin: 0;
-        text-align: center;
-        justify-content: center;
-    }
 
 
-    /*2° PARTE*/
-    #featuresFinancein {
-        flex-direction: column;
-        padding: 2rem;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #imageManCoins {
-        margin: 0;
-    }
-
-    #choosePlan {
-        margin: 0 15px 0 15px;
-        text-align: center;
-        font-size: 10px;
-        padding: 60px 0;
-    }
-
-    #textChoosePlan {
-        font-size: 20px;
-    }
-
-
-    /*ENTRE NO TIME*/
-    #informationTeam {
-        padding: 2rem;
-        margin: 20px 20px 0 20px;
-    }
-
-    .footer-text{
-        font-size: 11px;
-    }
-
-
-/*MENU HAMBURGUER*/
+    /*MENU HAMBURGUER*/
     nav {
         padding: 2rem;
         border-bottom-left-radius: 0;
@@ -125,4 +71,70 @@
         background-color: #232E26;
         margin: 4px 4px;
     }
+    /*NAVBAR*/
+
+
+    #presentationFinancein {
+        text-align: center;
+        justify-content: center;
+        font-size: 19px;
+    }
+
+    #about {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textPresentation {
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /*2° PARTE*/
+    #featuresFinancein {
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #imageManCoins {
+        margin: 0;
+    }
+
+    #choosePlan {
+        margin: 0 15px 0 15px;
+        text-align: center;
+        font-size: 10px;
+        padding: 60px 0;
+    }
+
+    #textChoosePlan {
+        font-size: 20px;
+    }
+
+
+    /*FOOTER*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        height: 500px;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerRightSide {
+        display: none; 
+    }
+
+    .footerLeftSide {
+        align-items: center;
+}
 }
