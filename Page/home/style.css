@@ -50,7 +50,7 @@ nav .menu li{
     gap: 5px;
 }
 
-.logoTitle{
+.logoTitle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,13 +75,13 @@ main {
     padding: 50px 20px 60px; 
 }
 
-.banner-item img {
+.bannerItem img {
     width: 150px;
     height: 150px;
     border-radius: 10px; 
 }
 
-.orange-box {
+.orangeBox {
     background-color: #F9B67A;
     padding: 20px;
     display: flex;
@@ -92,7 +92,7 @@ main {
     height: 200px;
 }
 
-.text-box {
+.textBox {
     background-color: #f2775d; 
     margin-top: 15px;
     padding: 5px;
@@ -106,7 +106,7 @@ main {
     text-align: center; 
 }
 
-.text-box:hover {
+.textBox:hover {
     background-color: #FFDDDF;
 }
 
@@ -120,7 +120,7 @@ main {
     flex-wrap: wrap;
 }
 
-.banner-item {
+.bannerItem {
     text-align: center;
     margin: 0;
     justify-content: center;
@@ -129,41 +129,40 @@ main {
     flex-direction: column;
 }
 
-.banner-item img {
+.bannerItem img {
     width: 200px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.banner-item p {
-    margin-top: 20px;
+.bannerItem p {
     font-size: 18px;
     font-weight: bold;
 }
 
-.main_title {
+.mainTitle {
     margin-top: 30px;
     margin-bottom: 60px;
 }
 
-.main_title h1 {
+.mainTitle h1 {
     text-align: center;
     margin: 20px 0 10px;
 }
 
-.main_title p {
+.mainTitle p {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.content {
+.contentDashs {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.boxes1, .boxes2, .boxes3 {
+.boxFiis, .boxFinancialMarket, .boxCryptocurrency {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -171,7 +170,7 @@ main {
 }
 
 /*CAIXA DE TEXTO*/
-.box {
+.boxExplication {
     background-color: #fff;
     flex: 1;
     height: auto; 
@@ -182,23 +181,23 @@ main {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.explicacaoDash {
+.explicationDash {
     margin-top: 0;
     text-align: center;
 }
 
-.detalhesDash {
+.detailsDash {
     list-style: none;
     padding: 0;
     margin: 1rem;
 }
 
-.detalhesDash li {
+.detailsDash li {
     margin-bottom: 10px;
 }
 
 /*CAIXA DE IMAGEM*/
-.box_large {
+.boxIframe {
     background-color: #fff;
     flex: 3;
     height: 500px; 

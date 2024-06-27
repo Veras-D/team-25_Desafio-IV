@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     body, html {
         overflow-y: auto;
     }
@@ -8,7 +8,7 @@
         padding: 2rem;
     }
 
-    /*MENU HAMBURGUER*/ 
+/*MENU HAMBURGUER*/ 
     #menu {
         display: none;
         position: fixed;
@@ -56,7 +56,7 @@
     #menuDivisionLarge {
         display: none;
     }
-    /*NAVBAR*/
+/*NAVBAR*/
 
 
 
@@ -69,25 +69,41 @@
         text-align: center;
     }
 
-    .orange-box {
+    .orangeBox {
         flex-direction: column; 
         width: 90%;
         padding: 10px;
         background-color: #F9B67A;
         gap: 10px;
-        height: 820px;
+        height: auto;
     }
 
-    .text-box {
+    .textBox {
         width: 100px;
         height: 30px;
     }
 
-    .main_title {
-        margin: 20px 0 40px;
+    .mainTitle {
+        margin: 40px 10px 20px 10px;
     }
 
-    .box {
+    .mainTitle h1 {
+        font-size: 24px;
+    }
+
+
+/*SECTION COM OS IFRAMES*/
+    .boxFiis, .boxCryptocurrency {
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    .boxFinancialMarket {
+        justify-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .boxExplication {
         width: 90%;
         max-width: 90%;
         height: auto;
@@ -96,7 +112,7 @@
     }
 
 
-    /*FOOTER*/
+/*FOOTER*/
     footer {
         display: flex;
         flex-direction: column;
@@ -127,31 +143,5 @@
         width: 100%;
         justify-content: center;
         margin: 0;
-    }
-
-
-
-@media (max-width: 576px) {
-    .header-container {
-        flex-direction: column;
-    }
-    .text-box {
-        width: 80px;
-        height: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 20px;
-    }
-    .logo-image {
-        width: 30px;
-        height: 30px;
-    }
-    .text-box {
-        width: 70px;
-        height: 20px;
-    }
     }
 }
