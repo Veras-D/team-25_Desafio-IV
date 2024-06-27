@@ -1,16 +1,6 @@
 {
     "version": 2,
     "cleanUrls": true,
-    "functions": {
-      "api/index.js": {
-        "memory": 1024,
-        "maxDuration": 30
-      },
-      "api/controller/*.js": {
-        "memory": 1024,
-        "maxDuration": 30
-      }
-    },
     "rewrites": [
       {
         "source": "/(.*)",
