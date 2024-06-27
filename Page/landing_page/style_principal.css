@@ -68,8 +68,6 @@
   
   /*PRIMEIRAPÁGINA*/
   #firstPage{
-    /* height: 90vh;
-    width: 100%; */
     display: flex;
     flex-direction: column;
   }
@@ -80,7 +78,7 @@
       gap: 20px;
   }
   
-  #presentation {
+  #presentationFinancein {
     display: flex;
     margin-top: 6rem;
     margin-bottom: 5%;
@@ -109,12 +107,12 @@
   }
   
   /*Botão*/
-  #buttonEnterContact{
+  #buttonRegistration {
       width: fit-content;
       height: fit-content;
   }
   
-  #enterContact {
+  #enterRegistration {
     background-color: #F2775D;
     color: #FFF;
     width: 220px;
@@ -122,16 +120,18 @@
     font-size: 15px;
     border-radius: 10px;
     border: none;
+    font-weight: bold;
   }
   
-  #enterContact:hover{
+  #enterRegistration:hover{
     transition: .3s;
     transform: scale(1.1);
   }
 
 
+
   /*SECTION DE NUMEROS DOS USUARIOS*/
-  #numerosUsuarios {
+  #informationNumberUsers {
     padding: 0 70px;
   }
 
@@ -142,25 +142,17 @@
     flex-wrap: wrap;
 }
 
-  .mision{
+  .numbersUsers {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     padding: 40px;  
     background-color: #FFFFFF;
+    align-items: center;
 }
-
-.vision{
-    width: 562px;
-    left: 10px;
-    padding: 40px 20px;
-    background-color: #FFFFFF;
-}
-  
-  
   
   /*SEGUNDA PÁGINA*/
-  #news {
+  #featuresFinancein {
     display: flex;
     align-items: center;
     margin-top: 5%;
@@ -169,28 +161,43 @@
     gap: 10vh;
   }
   
-  #trending {
+  #imageManCoins {
     margin-left: 3rem;
   }
   
-  #otherNews {
+  #exploreFeatures {
     display: flex;
     flex-direction: column;
     margin-right: 3rem;
     gap: 2vh;
   }
 
-  #listagemFuncionalidade {
-    text-decoration: none;
+  #exploreFeaturesText {
+    font-weight: normal;
+  }
+
+  #listingFeatures {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #listingFeatures li {
+    list-style: none;
+  }
+  
+  #listingFeatures li img {
+    vertical-align: middle;
+    margin-right: 10px;
   }
   
 
   /*TERCEIRA PÁGINA*/
-  #motivational {
+  #choosePlan {
       padding: 0 60px 60px 60px;
   }
   
-  #textMotivational{
+  #textExplanationPlans {
       letter-spacing: 2px;
       display: flex;
       flex-direction: column;
@@ -199,18 +206,18 @@
       margin-block-end: 2rem;
   }
 
-  #textAuthor {
+  #textChoosePlan {
     font-size: 35px;
   }
 
-  #textoPlano {
+  #textPlan {
     font-size: 16px;
     margin: 0 9rem;
   }
   
   
   /*Faça parte da nossa equipe - última parte*/
-  .ourTeam{
+  .allPlans {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -218,7 +225,7 @@
       flex-wrap: wrap;
   }
   
-  .personalCard{
+  .planCard {
       background: #FFF;
       height: 720px;
       width: 305px;
@@ -231,18 +238,28 @@
       gap: 13px;
   }
   
-  .personalName{
+  .planType {
       color: #232536;
       font-size: 18px;
       padding: 2rem;
   }
   
-  .socialMedia{
+  .planBenefits {
       display: flex;
       justify-content: center;
   }
+
+  .planBenefits ul li {
+    display: flex;
+    align-items: center;
+  }
   
-  #beneficios {
+  .planBenefits ul li img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .listBenefits {
     display: flex;
     flex-direction: column;
     gap: 4vh;
@@ -252,14 +269,14 @@
     width: 10%;
   }
 
-  .acessarPlano {
+  .accessPlan {
     display: flex;
     flex-direction: column;
     margin-top: auto;
     margin-block-end: 3rem;
   }
   
-  .botaoAcessar {
+  .buttonAccess {
     margin-top: 1rem;
     border: 2px solid #F2775D;
     border-radius: 50px;
@@ -270,11 +287,11 @@
   
 
   /*INFORMAÇÕES*/
-  #conviteTime{
+  #invitationUsers {
     margin-block-end: 5rem;
   }
 
-  #informationTeam{
+  #invitationUsersText {
     margin: 40px 290px;
     display: flex;
     flex-direction: column;
@@ -283,14 +300,14 @@
     gap: 1rem;
   }
 
-  .textoMaiorIgual {
+  .textForUsers {
     font-size: 35px;
   }
 
 
 
   /*CLIENTES*/
-    #clientesSatisfeitos {
+    #textRecommendationClients {
         margin: 40px 400px;
         display: flex;
         flex-direction: column;
@@ -299,7 +316,7 @@
         gap: 2rem;
     }
 
-  .avaliacaoCliente {
+  .reviewClient {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,7 +324,7 @@
     gap: 1rem;
   }
 
-  .cardCliente {
+  .cardReviewClient {
     background: #FFF;
     height: 200px;
     width: 350px;
@@ -321,32 +338,33 @@
     padding: 2vh;
   }
 
-  .cardGeral {
+  .cardInformationClient {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
 
-  .nomeCliente {
+  .nameClient {
     color: #232536;
     font-size: 18px;
     padding: 0 4vh;
   }
 
-  .notinha {
+  .gradeClient {
     display: flex;
     flex-direction: row;
     gap: 1vh;
     font-size: 14px;
   }
 
-  .textoCliente {
+  .textClient {
     padding: 2vh 0;
     text-align: start;
   }
 
 
+/*SECTION CADASTRAR USUÁRIO*/
   #cadastrarUsuario {
     padding: 0 90px;
     margin-block-end: 5%;
