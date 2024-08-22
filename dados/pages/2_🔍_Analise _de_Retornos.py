@@ -75,17 +75,6 @@ st.header("Comparação com Índices de Mercado")
 
 # Aqui você pode adicionar gráficos comparativos com SP500 e IBOVESPA
 
-st.header("Métricas de Risco e Retorno")
-
-retorno_medio = dados_cripto['retorno'].mean()
-risco = dados_cripto['retorno'].std()
-retorno_acumulado = dados_cripto['retorno_diario_acumulado'].iloc[-1]
-
-col8, col9, col10 = st.columns(3)
-
-col8.metric("Retorno Médio", f"{retorno_medio:.2%}")
-col9.metric("Risco (Desvio Padrão)", f"{risco:.2%}")
-col10.metric("Retorno Acumulado", f"{retorno_acumulado:.2%}")
 
 # Adicione aqui o gráfico de bolha para Risco x Retorno x Valorização
 
