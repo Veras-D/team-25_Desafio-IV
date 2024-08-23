@@ -71,7 +71,7 @@ with col7:
     fig = px.histogram(dados_cripto, x='retorno', nbins=75)
     st.plotly_chart(fig, use_container_width=True)
 
-st.header("Comparação com Índices de Mercado")
+# st.header("Comparação com Índices de Mercado")
 
 # Aqui você pode adicionar gráficos comparativos com SP500 e IBOVESPA
 
