@@ -28,5 +28,5 @@ st.markdown(
 col_l, col_c, col_r = st.columns(3)
 
 with col_c:
-    st.image("./Page/assets/logo.png", width=300, use_column_width=True)
+    st.image("./Page/assets/logo.png", width=300, use_container_width=True)
     st.markdown("<h1 style='text-align: center;'>Dashboard Criptomoedas</h1>", unsafe_allow_html=True)
